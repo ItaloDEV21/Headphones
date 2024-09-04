@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fones de Ouvido</title>
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="/Fones de ouvido/Style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="Logo"><i class='bx bx-headphone'></i>Soundbox</box-icon></a>
+
+        <ul class="navegation">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Teach Speces</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="/Fones de ouvido/assets/img/product1.png" class="one">
+        </div>
+
+        <div class="home-text">
+            <h1>Wirelss <br> Headphone</h1>
+            <h5>The smarter Way to listen</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">SHOP NOW</a>
+        </div>
+    </section>
+
+    <div class="main">
+        <div class="row1">
+            <li><img src="/Fones de ouvido/assets/img/main1.png" onclick="slider('/Fones de ouvido/assets/img/product1.png')"></li>
+        </div>
+        <div class="row2">
+            <li><img src="/Fones de ouvido/assets/img/main2.png" onclick="slider('/Fones de ouvido/assets/img/product2.png')"></li>
+        </div>
+        <div class="row3">
+            <li><img src="/Fones de ouvido/assets/img/main3.png" onclick="slider('/Fones de ouvido/assets/img/product3.png')"></li>
+        </div>
+    </div>
+
+    <script>
+        function slider(anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+        let menu = document.querySelector ('#menu-icon');
+        let navbar = document.querySelector ('.navbar');
+
+        menu.onclick = () => {
+            menu.classList.toggle ('bx-x');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
